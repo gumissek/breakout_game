@@ -8,9 +8,9 @@ class Ball(Turtle):
         self.shape('circle')
         self.color('white')
         self.penup()
-        self.move_x = random.randint(-3,3)
-        self.move_y = random.randint(-4,4)
-        self.move_speed=0.1
+        self.move_x = random.randint(-4,4)
+        self.move_y = random.randint(3,7)
+        self.move_speed=0.04
         self.setpos(0, -200)
 
     def ball_move(self):

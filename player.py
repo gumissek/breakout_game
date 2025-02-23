@@ -10,6 +10,6 @@ class Player(Turtle):
         self.setpos(0, -240)
 
     def move_left(self):
-        self.goto(self.xcor()-7,self.ycor())
+        self.goto(self.xcor()-10,self.ycor())
     def move_right(self):
-        self.goto(self.xcor()+7,self.ycor())
+        self.goto(self.xcor()+10,self.ycor())
