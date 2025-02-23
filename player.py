@@ -6,10 +6,10 @@ class Player(Turtle):
         self.shape('square')
         self.penup()
         self.color('white')
-        self.shapesize(1, 3)
-        self.setpos(0, -250)
+        self.shapesize(0.5, 3)
+        self.setpos(0, -240)
 
     def move_left(self):
-        self.goto(self.xcor()-20,self.ycor())
+        self.goto(self.xcor()-7,self.ycor())
     def move_right(self):
-        self.goto(self.xcor()+20,self.ycor())
+        self.goto(self.xcor()+7,self.ycor())
