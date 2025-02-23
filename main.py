@@ -36,6 +36,8 @@ while hearts_scoreboard.hearts > 0:
     screen.update()
     time.sleep(ball.move_speed)
     ball.ball_move()
+    if player1.xcor()<-350:
+        player1.setx(-350)
     # uderzanie w sciane
     if ball.xcor() > 370 or ball.xcor() < -370:
         ball.ball_bounce_x()
