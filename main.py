@@ -1,24 +1,32 @@
+import turtle
 from turtle import Turtle,Screen
-
+from player import Player
 screen = Screen()
-screen.screensize(200,600,bg='black')
+screen.bgcolor('black')
+screen.setup(width=800,height=600)
+screen.listen()
 
-player = Turtle(shape='square')
-player.penup()
-player.color('white')
-player.shapesize(1,3)
-player.setpos(0,-250)
+
+player1=Player()
+
+screen.onkeypress(player1.move_left,'Left')
+screen.onkeypress(player1.move_right,'Right')
+
+
+
+
+# zrobic layout
+# zrobic movement gracza ok
+# zrobic klocki
+# zrobic scoreboarda
+# zrobic odbijanie sie od gracza
+# zrobic niszczenie blokow
+# zrobic odbijanie sie
+#
+
 
 
 
 
 screen.mainloop()
 
-
-# zrobic layout
-# zrobic poruszanie sie gracza
-# zrobic klocki
-# zrobic scoreboarda
-# zrobic odbijanie sie od gracza
-# zrobic niszczenie blokow
-#
