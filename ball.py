@@ -10,7 +10,7 @@ class Ball(Turtle):
         self.penup()
         self.move_x = random.randint(-3,3)
         self.move_y = random.randint(-4,4)
-
+        self.move_speed=0.1
         self.setpos(0, -200)
 
     def ball_move(self):
@@ -23,5 +23,4 @@ class Ball(Turtle):
 
     def ball_reset_position(self):
         self.goto(0,-200)
-        self.move_x=abs(self.move_x)
         self.move_y=abs(self.move_y)
